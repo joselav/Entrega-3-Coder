@@ -1,0 +1,93 @@
+@mixin tablet {
+    @media screen and (min-width:768px) {
+        @content;
+        
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width:992px) {
+        @content;     
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.mainpeli {
+    width: 100vw;
+    height: 17400px;
+
+    @include tablet{
+     height: 10900px;
+    }
+
+    @include desktop {
+        height: 5500px;
+    }
+
+
+
+    .--contenedor-peliculas {
+        margin:auto;
+
+        .--card-peli {
+            margin: 20px auto;
+            background-color: $color-white;
+            border: 0;
+            &:hover {
+                background-color: rgb(244, 244, 244);
+            }
+
+            .--card-peli-img {
+                height:260px;
+                width: 60%;
+                margin: auto;
+            }
+
+            .--card-peli-body {
+                width: 95%;
+                margin: auto;
+
+
+                .--card-peli-titulo {
+                    font-family: 'Oswald',sans-serif;
+                    font-size: 22px;
+                    text-align: center;
+
+                    @include tablet{
+                        font-size: 30px;
+                    }
+
+                    @include desktop {
+                        font-size: 30px;
+                    }
+                }
+
+                .--card-peli-txt {
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 15px;
+                    text-align: start;
+
+                    @include tablet {
+                        font-size: 18px;
+                    }
+
+                    @include desktop {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+}

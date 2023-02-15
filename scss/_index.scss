@@ -1,0 +1,308 @@
+@mixin tablet {
+    @media screen and (min-width:768px) {
+        @content;
+        
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width:992px) {
+        @content;     
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainindex {
+    width: 100vw;
+    height: 2000px;
+
+    @include tablet {height: 2380px;}
+    @include desktop {height: 2750px;}
+
+
+    .imgav {
+        height: 50vh;
+
+        @include tablet {
+            width: 100vw;
+            height: 65vh;
+        }
+        @include desktop {
+            width: 100%;
+            height: 110vh;
+        }
+    }
+
+    .avengersimg {
+
+        width: 100%;
+        height: 50vh;
+
+        @include tablet {
+            width: 100%;
+            height: 65vh;
+        }
+
+        @include desktop {
+            width: auto;
+            height: 110vh;
+        }
+    }
+
+
+    .info {
+        width: 100vw;
+        height: 1100px;
+
+        @include tablet {
+            height: 1250px;
+        }
+
+        @include desktop {
+            height: 1100px;
+        }
+
+    }
+
+    .mcu {
+        width: 90vw;
+        margin: 20px auto;
+
+                .studio {
+                    height: 120px;
+                    display: block;
+                    margin: auto;
+
+                    @include tablet {
+                        height: 160px;
+
+                    }
+
+                    @include desktop {
+                        height: 200px;
+                    }
+                }
+
+                .pmcu {
+                    width: 100%;
+                    padding: 20px;
+
+                    p{
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 15px;
+
+                        @include tablet {
+                            font-size: 19px;
+                        }
+
+                        @include desktop {
+                            font-size: 25px;
+                        }
+                    }
+                }
+    }
+
+    .avengers{
+        @include desktop{
+            width: 100vw;
+            height: 830px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 0.3fr 1fr;
+            grid-template-areas: "img img" "av txt";
+        }
+
+        .logoavengers{
+            width:62vw;
+            height: 80px;
+            margin: 20px auto;
+
+            @include tablet {
+                height: 120px;
+            }
+
+            @include desktop {
+                height: 150px;
+                margin-left: 150px;
+                grid-area: img;
+            }
+
+            .svgav {
+                width: 100%;
+                height: 10vh;
+                margin: auto;
+
+                @include tablet{
+                    height: 15vh;
+                }
+
+                @include desktop {
+                    height: 18vh;
+                }
+
+            }  
+        }
+
+        .imgavengers{
+            width: 80vw;
+            height: 350px;
+            margin: 20px auto;
+
+            @include tablet {
+                width: 90vw;
+                height: 450px;
+            }
+
+            @include desktop {
+                width: 50vw;
+                height: 400px;
+                grid-area: av;
+                
+            }
+
+            .tta{
+                width: 100%;
+                height: 46vh;
+                box-sizing: border-box;
+
+                @include tablet {
+                    height: 60vh;
+                }
+
+                @include desktop {
+                    width: 100%;
+                    height: 400px;
+                }
+
+            }
+        }  
+
+        .pavengers {
+            width: 80vw;
+            margin: auto;
+
+            @include desktop {
+                grid-area: txt;
+                width: 45vw;
+                height: 240px;
+                margin-top: 80px;
+                
+            }
+
+
+            p{
+                font-family: 'Oswald', sans-serif;
+                font-size: 15px;
+
+                @include tablet {
+                    font-size: 20px;
+                }
+
+                @include desktop {
+                    font-size: 25px;
+                    padding: 15px;
+                    text-align: left;
+
+                }
+             }
+
+            .botper{
+                width: 50vw;
+                height: 40px;
+                margin: 10px auto;
+                background-color:$color-red;
+                border-radius: 10px;
+
+                @include tablet {
+                    width: 40vh;
+                    height: 60px;
+                    margin: 25px auto;
+                    
+                }
+
+                @include desktop {
+                    width: 23vw;
+                    height: 65px;
+                    border-radius: 15;
+                    &:hover{
+                        background-color: $color-yellow;
+                        height: 60px;
+                }
+                }
+
+                a{
+                    color: $color-white;
+                    text-decoration-line: none;
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 15px;
+                    text-align: center;
+
+                    
+
+                    @include tablet {
+                        font-size: 22px;
+                    }
+
+                    @include desktop {
+                        font-size: 30px;
+                        &:hover {color: black;}
+                        }
+                }
+
+
+            }
+        }
+    }
+
+    .peli {
+        width: 90vw;
+        height: 240px;
+        margin: 20px auto;
+
+        @include tablet {
+            height: 520px;
+        }
+
+        @include desktop {
+            width: 50vw;
+            height: 500px;
+        }
+
+
+        h2 {
+            font-size: 30px;
+            font-family: 'Oswald', sans-serif;
+            color: $color-red;
+            text-align: center;
+
+            @include tablet {
+                font-size: 42px;
+            }
+
+            @include desktop {
+                font-size: 50px;
+            }
+        }
+
+        iframe {
+            width: 100%;
+            height: 45vh;
+
+            @include tablet {
+               width: 100%;
+               height: 60vh;
+            }
+
+            @include desktop {
+                width: 100%;
+                height: 50vh;
+            }
+        }
+    }
+}
+

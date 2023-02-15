@@ -1,0 +1,128 @@
+@mixin tablet {
+    @media screen and (min-width:768px) {
+        @content;
+        
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width:992px) {
+        @content;     
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.main--per {
+    width: 100vw;
+    height: 15000px;
+
+    @include tablet {
+        height: 8000px;
+    }
+
+    @include desktop {
+        height: 5100px;
+    }
+
+
+    .contenedor {
+        width: 80vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(30, 0.3fr);
+
+        @include tablet {
+            width: 100vw;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(15, 0.5fr);
+        }
+
+        @include desktop {
+            width: 100vw;
+            grid-template-columns:1fr 1fr 1fr  ;
+            grid-template-rows: repeat(10, 0.7fr);
+        }
+
+        .personajes{
+            margin: 20px;
+            &:hover {
+             background-color: rgb(244, 244, 244);;
+            }
+
+            .fondoimg {
+                width: 45%;
+                margin: auto;
+
+                @include tablet{
+                    width: 50%;
+                }
+
+                @include desktop {
+                    width: 50%;
+                }
+
+                .imgper {
+                    height: 260px;
+                    margin:auto;
+                }
+            }
+
+            .cajatxt {
+                width: 70%;
+                margin: auto;
+
+                @include tablet {
+                    width: 85%;
+                }
+
+                @include desktop {
+                    width: 100%;
+                }
+
+                .txtper {
+                    margin: auto;
+
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 25px;
+                    text-align: center;
+
+                    @include tablet {
+                        font-size: 30px;
+                    }
+
+                    @include desktop {
+                        font-size: 32px;
+                    }
+                }
+
+                .pper{
+                    padding: 8px;
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 16px;
+
+                    @include tablet {
+                        font-size: 18px;
+                    }
+
+                    @include desktop {
+                        font-size: 16px;
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+}

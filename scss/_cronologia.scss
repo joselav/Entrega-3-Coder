@@ -1,0 +1,108 @@
+@mixin tablet {
+    @media screen and (min-width:768px) {
+        @content;
+        
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width:992px) {
+        @content;     
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.main__crono {
+    width: 100vw;
+    height: 14800px;
+
+    @include tablet {
+        height: 8300px;
+    }
+
+    @include desktop {
+        height: 4800px;
+    }
+
+
+    .main__titulo {
+        width: 50%;
+        height: 50px;
+        margin: auto;
+
+        .main__titulo__txt {
+            font-family: 'Oswald', sans-serif;
+            font-size: 40px;
+            color: $color-red;
+            text-align: center;
+        }
+    }
+
+    .--row-crono {
+
+        .container__movie {
+            margin: 20px auto;
+            &:hover{
+                background-color: rgb(244, 244, 244);
+            }
+
+                .movie__pic {
+                    width: 30%;
+                    height: 260px;
+                    margin: auto;
+
+                    @include tablet {
+                        width: 50%;
+                    }
+
+                    @include desktop {
+                        width: 60%;
+                    }
+
+                    .movies{
+                        height: 260px;
+                        margin: auto;
+                    }
+                }
+
+                .movie__info {
+                    width: 30%;
+                    margin: auto;
+
+                    @include tablet{
+                        width: 50%;
+                    }
+
+                    @include desktop {
+                        width: 60%;
+                    }
+
+                    .movie__txt{
+                        font-family: 'Oswald', sans-serif;
+                        font-size: 20px;
+                        text-align: center;
+
+                        @include tablet {
+                            font-size: 25px;
+                        }
+
+                        @include desktop {
+                            font-size: 25px;
+                        }
+                    }
+                }
+                }
+
+    }
+}

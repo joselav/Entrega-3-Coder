@@ -1,0 +1,110 @@
+@mixin tablet {
+    @media screen and (min-width:768px) {
+        @content;
+        
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width:992px) {
+        @content;     
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-series {
+    width: 100vw;
+    height: 8100px;
+
+    @include tablet {
+        height: 5250px;
+    }
+
+    @include desktop {
+        height: 2700px;
+    }
+
+    .--row-serie{
+        width: 100%;
+        margin: auto;
+    }
+
+
+    .--contenedor-series {
+        width: 70vw;
+
+        @include tablet {
+            width: 85vw;
+        }
+
+        @include desktop {
+            width: 130vw;
+        }
+
+        .--container-serie {
+            padding: 3px;
+
+            .--card-serie {
+                background-color: $color-white;
+                border-radius: 4px;
+                border: 0;
+                margin: 20px auto;
+                &:hover{
+                    background-color: rgb(244, 244, 244);
+                }
+
+            }
+
+            .--card-serie-img {
+                width: 60%;
+                height: 260px;
+                margin: auto;
+            }
+
+            .--card-serie-body {
+                width: 95%;
+                margin: auto;
+
+                .--card-serie-titulo {
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 22px;
+                    text-align: center;
+
+                    @include tablet {
+                        font-size: 30px;
+                    }
+
+                    @include desktop{
+                        font-size: 30px;
+                    }
+                }
+
+                .--card-serie-txt {
+                    font-family: 'Oswald', sans-serif;
+                    font-size: 15px;
+                    text-align: start;
+
+                    @include tablet{
+                        font-size: 18px;
+                    }
+
+                    @include desktop {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}

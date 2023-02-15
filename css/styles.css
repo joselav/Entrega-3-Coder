@@ -1,0 +1,598 @@
+header {
+  width: 100%;
+  height: 300px;
+  background-color: #040522; }
+  @media screen and (min-width: 768px) {
+    header {
+      height: 100px; } }
+  @media screen and (min-width: 992px) {
+    header {
+      height: 80px; } }
+  header #header {
+    display: block; }
+    @media screen and (min-width: 768px) {
+      header #header {
+        display: grid;
+        grid-template-columns: 0.7fr .8fr .8fr .8fr .8fr .8fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo  nav nav nav nav nav"; } }
+    @media screen and (min-width: 992px) {
+      header #header {
+        display: grid;
+        grid-template-columns: 0.7fr 2.3fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo . nav nav nav nav nav"; } }
+  header .logo {
+    width: 25%;
+    height: 80px;
+    margin: auto; }
+    @media screen and (min-width: 768px) {
+      header .logo {
+        width: auto;
+        height: 100px;
+        padding: 6px;
+        grid-area: logo; } }
+    @media screen and (min-width: 992px) {
+      header .logo {
+        width: auto;
+        height: 80px;
+        padding: 6px;
+        grid-area: logo; } }
+  header .botnav {
+    width: 50vw;
+    margin: auto; }
+    @media screen and (min-width: 768px) {
+      header .botnav {
+        width: 100%;
+        height: 100px;
+        grid-area: nav; } }
+    @media screen and (min-width: 992px) {
+      header .botnav {
+        width: 100%;
+        height: 80px;
+        grid-area: nav; } }
+  header .botones {
+    display: inline; }
+    @media screen and (min-width: 768px) {
+      header .botones {
+        display: flex;
+        justify-content: space-around; } }
+    @media screen and (min-width: 992px) {
+      header .botones {
+        display: flex;
+        justify-content: space-around; } }
+  header a {
+    text-decoration: none; }
+  header .boton {
+    width: 100%;
+    height: 30px;
+    background-color: #FFE81F;
+    list-style: none;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin: 4px; }
+    @media screen and (min-width: 768px) {
+      header .boton {
+        flex-direction: column;
+        width: 95px;
+        height: 40px;
+        font-size: 20px;
+        margin-top: 20px; }
+        header .boton:hover {
+          background-color: red;
+          color: white; } }
+    @media screen and (min-width: 992px) {
+      header .boton {
+        flex-direction: column;
+        width: 120px;
+        height: 40px;
+        margin-top: 20px;
+        font-size: 25px; }
+        header .boton:hover {
+          background-color: red;
+          color: white; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.mainindex {
+  width: 100vw;
+  height: 2000px; }
+  @media screen and (min-width: 768px) {
+    .mainindex {
+      height: 2380px; } }
+  @media screen and (min-width: 992px) {
+    .mainindex {
+      height: 2750px; } }
+  .mainindex .imgav {
+    height: 50vh; }
+    @media screen and (min-width: 768px) {
+      .mainindex .imgav {
+        width: 100vw;
+        height: 65vh; } }
+    @media screen and (min-width: 992px) {
+      .mainindex .imgav {
+        width: 100%;
+        height: 110vh; } }
+  .mainindex .avengersimg {
+    width: 100%;
+    height: 50vh; }
+    @media screen and (min-width: 768px) {
+      .mainindex .avengersimg {
+        width: 100%;
+        height: 65vh; } }
+    @media screen and (min-width: 992px) {
+      .mainindex .avengersimg {
+        width: auto;
+        height: 110vh; } }
+  .mainindex .info {
+    width: 100vw;
+    height: 1100px; }
+    @media screen and (min-width: 768px) {
+      .mainindex .info {
+        height: 1250px; } }
+    @media screen and (min-width: 992px) {
+      .mainindex .info {
+        height: 1100px; } }
+  .mainindex .mcu {
+    width: 90vw;
+    margin: 20px auto; }
+    .mainindex .mcu .studio {
+      height: 120px;
+      display: block;
+      margin: auto; }
+      @media screen and (min-width: 768px) {
+        .mainindex .mcu .studio {
+          height: 160px; } }
+      @media screen and (min-width: 992px) {
+        .mainindex .mcu .studio {
+          height: 200px; } }
+    .mainindex .mcu .pmcu {
+      width: 100%;
+      padding: 20px; }
+      .mainindex .mcu .pmcu p {
+        font-family: 'Oswald', sans-serif;
+        font-size: 15px; }
+        @media screen and (min-width: 768px) {
+          .mainindex .mcu .pmcu p {
+            font-size: 19px; } }
+        @media screen and (min-width: 992px) {
+          .mainindex .mcu .pmcu p {
+            font-size: 25px; } }
+  @media screen and (min-width: 992px) {
+    .mainindex .avengers {
+      width: 100vw;
+      height: 830px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.3fr 1fr;
+      grid-template-areas: "img img" "av txt"; } }
+  .mainindex .avengers .logoavengers {
+    width: 62vw;
+    height: 80px;
+    margin: 20px auto; }
+    @media screen and (min-width: 768px) {
+      .mainindex .avengers .logoavengers {
+        height: 120px; } }
+    @media screen and (min-width: 992px) {
+      .mainindex .avengers .logoavengers {
+        height: 150px;
+        margin-left: 150px;
+        grid-area: img; } }
+    .mainindex .avengers .logoavengers .svgav {
+      width: 100%;
+      height: 10vh;
+      margin: auto; }
+      @media screen and (min-width: 768px) {
+        .mainindex .avengers .logoavengers .svgav {
+          height: 15vh; } }
+      @media screen and (min-width: 992px) {
+        .mainindex .avengers .logoavengers .svgav {
+          height: 18vh; } }
+  .mainindex .avengers .imgavengers {
+    width: 80vw;
+    height: 350px;
+    margin: 20px auto; }
+    @media screen and (min-width: 768px) {
+      .mainindex .avengers .imgavengers {
+        width: 90vw;
+        height: 450px; } }
+    @media screen and (min-width: 992px) {
+      .mainindex .avengers .imgavengers {
+        width: 50vw;
+        height: 400px;
+        grid-area: av; } }
+    .mainindex .avengers .imgavengers .tta {
+      width: 100%;
+      height: 46vh;
+      box-sizing: border-box; }
+      @media screen and (min-width: 768px) {
+        .mainindex .avengers .imgavengers .tta {
+          height: 60vh; } }
+      @media screen and (min-width: 992px) {
+        .mainindex .avengers .imgavengers .tta {
+          width: 100%;
+          height: 400px; } }
+  .mainindex .avengers .pavengers {
+    width: 80vw;
+    margin: auto; }
+    @media screen and (min-width: 992px) {
+      .mainindex .avengers .pavengers {
+        grid-area: txt;
+        width: 45vw;
+        height: 240px;
+        margin-top: 80px; } }
+    .mainindex .avengers .pavengers p {
+      font-family: 'Oswald', sans-serif;
+      font-size: 15px; }
+      @media screen and (min-width: 768px) {
+        .mainindex .avengers .pavengers p {
+          font-size: 20px; } }
+      @media screen and (min-width: 992px) {
+        .mainindex .avengers .pavengers p {
+          font-size: 25px;
+          padding: 15px;
+          text-align: left; } }
+    .mainindex .avengers .pavengers .botper {
+      width: 50vw;
+      height: 40px;
+      margin: 10px auto;
+      background-color: red;
+      border-radius: 10px; }
+      @media screen and (min-width: 768px) {
+        .mainindex .avengers .pavengers .botper {
+          width: 40vh;
+          height: 60px;
+          margin: 25px auto; } }
+      @media screen and (min-width: 992px) {
+        .mainindex .avengers .pavengers .botper {
+          width: 23vw;
+          height: 65px;
+          border-radius: 15; }
+          .mainindex .avengers .pavengers .botper:hover {
+            background-color: #FFE81F;
+            height: 60px; } }
+      .mainindex .avengers .pavengers .botper a {
+        color: white;
+        text-decoration-line: none;
+        font-family: 'Oswald', sans-serif;
+        font-size: 15px;
+        text-align: center; }
+        @media screen and (min-width: 768px) {
+          .mainindex .avengers .pavengers .botper a {
+            font-size: 22px; } }
+        @media screen and (min-width: 992px) {
+          .mainindex .avengers .pavengers .botper a {
+            font-size: 30px; }
+            .mainindex .avengers .pavengers .botper a:hover {
+              color: black; } }
+  .mainindex .peli {
+    width: 90vw;
+    height: 240px;
+    margin: 20px auto; }
+    @media screen and (min-width: 768px) {
+      .mainindex .peli {
+        height: 520px; } }
+    @media screen and (min-width: 992px) {
+      .mainindex .peli {
+        width: 50vw;
+        height: 500px; } }
+    .mainindex .peli h2 {
+      font-size: 30px;
+      font-family: 'Oswald', sans-serif;
+      color: red;
+      text-align: center; }
+      @media screen and (min-width: 768px) {
+        .mainindex .peli h2 {
+          font-size: 42px; } }
+      @media screen and (min-width: 992px) {
+        .mainindex .peli h2 {
+          font-size: 50px; } }
+    .mainindex .peli iframe {
+      width: 100%;
+      height: 45vh; }
+      @media screen and (min-width: 768px) {
+        .mainindex .peli iframe {
+          width: 100%;
+          height: 60vh; } }
+      @media screen and (min-width: 992px) {
+        .mainindex .peli iframe {
+          width: 100%;
+          height: 50vh; } }
+
+footer {
+  width: 100vw;
+  height: 150px;
+  background-color: #040522; }
+  @media screen and (min-width: 768px) {
+    footer {
+      height: 80px; } }
+  @media screen and (min-width: 992px) {
+    footer {
+      height: 80px; } }
+  footer .redes {
+    width: 30vw;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: auto;
+    padding: 20px; }
+  footer .socials {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.main-series {
+  width: 100vw;
+  height: 8100px; }
+  @media screen and (min-width: 768px) {
+    .main-series {
+      height: 5250px; } }
+  @media screen and (min-width: 992px) {
+    .main-series {
+      height: 2700px; } }
+  .main-series .--row-serie {
+    width: 100%;
+    margin: auto; }
+  .main-series .--contenedor-series {
+    width: 70vw; }
+    @media screen and (min-width: 768px) {
+      .main-series .--contenedor-series {
+        width: 85vw; } }
+    @media screen and (min-width: 992px) {
+      .main-series .--contenedor-series {
+        width: 130vw; } }
+    .main-series .--contenedor-series .--container-serie {
+      padding: 3px; }
+      .main-series .--contenedor-series .--container-serie .--card-serie {
+        background-color: white;
+        border-radius: 4px;
+        border: 0;
+        margin: 20px auto; }
+        .main-series .--contenedor-series .--container-serie .--card-serie:hover {
+          background-color: #f4f4f4; }
+      .main-series .--contenedor-series .--container-serie .--card-serie-img {
+        width: 60%;
+        height: 260px;
+        margin: auto; }
+      .main-series .--contenedor-series .--container-serie .--card-serie-body {
+        width: 95%;
+        margin: auto; }
+        .main-series .--contenedor-series .--container-serie .--card-serie-body .--card-serie-titulo {
+          font-family: 'Oswald', sans-serif;
+          font-size: 22px;
+          text-align: center; }
+          @media screen and (min-width: 768px) {
+            .main-series .--contenedor-series .--container-serie .--card-serie-body .--card-serie-titulo {
+              font-size: 30px; } }
+          @media screen and (min-width: 992px) {
+            .main-series .--contenedor-series .--container-serie .--card-serie-body .--card-serie-titulo {
+              font-size: 30px; } }
+        .main-series .--contenedor-series .--container-serie .--card-serie-body .--card-serie-txt {
+          font-family: 'Oswald', sans-serif;
+          font-size: 15px;
+          text-align: start; }
+          @media screen and (min-width: 768px) {
+            .main-series .--contenedor-series .--container-serie .--card-serie-body .--card-serie-txt {
+              font-size: 18px; } }
+          @media screen and (min-width: 992px) {
+            .main-series .--contenedor-series .--container-serie .--card-serie-body .--card-serie-txt {
+              font-size: 17px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0; }
+
+.mainpeli {
+  width: 100vw;
+  height: 17400px; }
+  @media screen and (min-width: 768px) {
+    .mainpeli {
+      height: 10900px; } }
+  @media screen and (min-width: 992px) {
+    .mainpeli {
+      height: 5500px; } }
+  .mainpeli .--contenedor-peliculas {
+    margin: auto; }
+    .mainpeli .--contenedor-peliculas .--card-peli {
+      margin: 20px auto;
+      background-color: white;
+      border: 0; }
+      .mainpeli .--contenedor-peliculas .--card-peli:hover {
+        background-color: #f4f4f4; }
+      .mainpeli .--contenedor-peliculas .--card-peli .--card-peli-img {
+        height: 260px;
+        width: 60%;
+        margin: auto; }
+      .mainpeli .--contenedor-peliculas .--card-peli .--card-peli-body {
+        width: 95%;
+        margin: auto; }
+        .mainpeli .--contenedor-peliculas .--card-peli .--card-peli-body .--card-peli-titulo {
+          font-family: 'Oswald',sans-serif;
+          font-size: 22px;
+          text-align: center; }
+          @media screen and (min-width: 768px) {
+            .mainpeli .--contenedor-peliculas .--card-peli .--card-peli-body .--card-peli-titulo {
+              font-size: 30px; } }
+          @media screen and (min-width: 992px) {
+            .mainpeli .--contenedor-peliculas .--card-peli .--card-peli-body .--card-peli-titulo {
+              font-size: 30px; } }
+        .mainpeli .--contenedor-peliculas .--card-peli .--card-peli-body .--card-peli-txt {
+          font-family: 'Oswald', sans-serif;
+          font-size: 15px;
+          text-align: start; }
+          @media screen and (min-width: 768px) {
+            .mainpeli .--contenedor-peliculas .--card-peli .--card-peli-body .--card-peli-txt {
+              font-size: 18px; } }
+          @media screen and (min-width: 992px) {
+            .mainpeli .--contenedor-peliculas .--card-peli .--card-peli-body .--card-peli-txt {
+              font-size: 17px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0; }
+
+.main__crono {
+  width: 100vw;
+  height: 14800px; }
+  @media screen and (min-width: 768px) {
+    .main__crono {
+      height: 8300px; } }
+  @media screen and (min-width: 992px) {
+    .main__crono {
+      height: 4800px; } }
+  .main__crono .main__titulo {
+    width: 50%;
+    height: 50px;
+    margin: auto; }
+    .main__crono .main__titulo .main__titulo__txt {
+      font-family: 'Oswald', sans-serif;
+      font-size: 40px;
+      color: red;
+      text-align: center; }
+  .main__crono .--row-crono .container__movie {
+    margin: 20px auto; }
+    .main__crono .--row-crono .container__movie:hover {
+      background-color: #f4f4f4; }
+    .main__crono .--row-crono .container__movie .movie__pic {
+      width: 30%;
+      height: 260px;
+      margin: auto; }
+      @media screen and (min-width: 768px) {
+        .main__crono .--row-crono .container__movie .movie__pic {
+          width: 50%; } }
+      @media screen and (min-width: 992px) {
+        .main__crono .--row-crono .container__movie .movie__pic {
+          width: 60%; } }
+      .main__crono .--row-crono .container__movie .movie__pic .movies {
+        height: 260px;
+        margin: auto; }
+    .main__crono .--row-crono .container__movie .movie__info {
+      width: 30%;
+      margin: auto; }
+      @media screen and (min-width: 768px) {
+        .main__crono .--row-crono .container__movie .movie__info {
+          width: 50%; } }
+      @media screen and (min-width: 992px) {
+        .main__crono .--row-crono .container__movie .movie__info {
+          width: 60%; } }
+      .main__crono .--row-crono .container__movie .movie__info .movie__txt {
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+        text-align: center; }
+        @media screen and (min-width: 768px) {
+          .main__crono .--row-crono .container__movie .movie__info .movie__txt {
+            font-size: 25px; } }
+        @media screen and (min-width: 992px) {
+          .main__crono .--row-crono .container__movie .movie__info .movie__txt {
+            font-size: 25px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0; }
+
+.main--per {
+  width: 100vw;
+  height: 15000px; }
+  @media screen and (min-width: 768px) {
+    .main--per {
+      height: 8000px; } }
+  @media screen and (min-width: 992px) {
+    .main--per {
+      height: 5100px; } }
+  .main--per .contenedor {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(30, 0.3fr); }
+    @media screen and (min-width: 768px) {
+      .main--per .contenedor {
+        width: 100vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(15, 0.5fr); } }
+    @media screen and (min-width: 992px) {
+      .main--per .contenedor {
+        width: 100vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(10, 0.7fr); } }
+    .main--per .contenedor .personajes {
+      margin: 20px; }
+      .main--per .contenedor .personajes:hover {
+        background-color: #f4f4f4; }
+      .main--per .contenedor .personajes .fondoimg {
+        width: 45%;
+        margin: auto; }
+        @media screen and (min-width: 768px) {
+          .main--per .contenedor .personajes .fondoimg {
+            width: 50%; } }
+        @media screen and (min-width: 992px) {
+          .main--per .contenedor .personajes .fondoimg {
+            width: 50%; } }
+        .main--per .contenedor .personajes .fondoimg .imgper {
+          height: 260px;
+          margin: auto; }
+      .main--per .contenedor .personajes .cajatxt {
+        width: 70%;
+        margin: auto; }
+        @media screen and (min-width: 768px) {
+          .main--per .contenedor .personajes .cajatxt {
+            width: 85%; } }
+        @media screen and (min-width: 992px) {
+          .main--per .contenedor .personajes .cajatxt {
+            width: 100%; } }
+        .main--per .contenedor .personajes .cajatxt .txtper {
+          margin: auto;
+          font-family: 'Oswald', sans-serif;
+          font-size: 25px;
+          text-align: center; }
+          @media screen and (min-width: 768px) {
+            .main--per .contenedor .personajes .cajatxt .txtper {
+              font-size: 30px; } }
+          @media screen and (min-width: 992px) {
+            .main--per .contenedor .personajes .cajatxt .txtper {
+              font-size: 32px; } }
+        .main--per .contenedor .personajes .cajatxt .pper {
+          padding: 8px;
+          font-family: 'Oswald', sans-serif;
+          font-size: 16px; }
+          @media screen and (min-width: 768px) {
+            .main--per .contenedor .personajes .cajatxt .pper {
+              font-size: 18px; } }
+          @media screen and (min-width: 992px) {
+            .main--per .contenedor .personajes .cajatxt .pper {
+              font-size: 16px; } }
